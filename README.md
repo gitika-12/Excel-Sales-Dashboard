@@ -2,7 +2,7 @@
 
 This project showcases an interactive Excel dashboard built using a bike sales dataset. The dashboard enables users to explore key sales trends across various customer demographics with ease.
 
-![Dashboard Preview](excel dashboard preview.png)
+![Dashboard Preview](excel-dashboard-preview.png)
 
 
 ## 🔍 Features
