@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bike Sales Analysis Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #2E3B4E;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #444;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #2E3B4E;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #1e2a38;
+    }
+
+    ul {
+      margin: 10px 0 20px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .kpi {
+      background-color: #f0f4f7;
+      padding: 10px 20px;
+      border-left: 5px solid #2E3B4E;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
+    .slide {
+        width: 100%;
+        flex-shrink: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        background: #fff;
+    }
+
+    .slide img {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #333;
+    }
+
+    #backToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 99;
+        border: none;
+        background-color: white;
+        color: white;
+        cursor: pointer;
+        padding: 12px 16px;
+        font-size: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    #backToTopBtn:hover {
+        background-color: #1e2a38;
+    }
+
+    @media screen and (max-width: 768px) {
+        .slide img {
+            height: auto;
+            width: 100%;
+        }
+        .btn {
+            font-size: 14px;
+            padding: 10px 16px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bike Sales Analysis Dashboard</h1>
+    <p><strong>Project Type:</strong> Excel Dashboard <strong>|</strong> Retail Analytics <strong>|</strong> Customer Demographics</p>
+
+    <h2>🔍 Project Summary</h2>
+    <p>This Excel dashboard provides a dynamic and interactive overview of bike sales data. It allows users to explore customer purchase behavior based on demographic filters such as marital status, region of residence, and number of children. Built entirely using pivot tables, charts, and slicers, the dashboard enables quick and insightful analysis of key sales trends.
+    </p>
+
+    <h2>📂 Download Project File</h2>
+    <a href="BikeSalesDashboard.xlsx" class="btn" download>📊 Download Excel Dashboard (.xlsx)</a>
+
+    <h2>📸 Dashboard Preview</h2>
+    <div class="slide"><img src="excel-dashboard-preview.png" alt="Bike Sales Dashboard"></div>
+
+    <h2>📈 Key Insights</h2>
+    <ul>
+      <li>Male customers appear to buy bikes more frequently than female customers.</li>
+      <li>80% of the active bike buyers are aged between 30 to 54 years.</li>
+      <li>Customers having to commute less than a mile buy bikes the most, while ones with 10+ miles commute buy bikes the least.</li>
+      <li>Interactive slicers allow targeted analysis by combining various demographics.</li>
+    </ul>
+
+    <h2>✅ Suggested Use Cases</h2>
+    <div class="kpi">Retail companies can assess sales trends based on family and residential demographics.</div>
+    <div class="kpi">Useful for marketing teams to segment and target campaigns more effectively.</div>
+    <div class="kpi">Great project example for showcasing Excel dashboarding and data storytelling skills.</div>
+
+    <h2>🧠 Skills Demonstrated</h2>
+    <ul>
+      <li>Excel Dashboard Design (Pivot Tables, Charts)</li>
+      <li>Slicer Integration for Filtered Views</li>
+      <li>Customer Demographic Analysis</li>
+      <li>Retail Sales Visualization</li>
+    </ul>
+
+    <h2>🚀 Future Enhancements</h2>
+    <ul>
+      <li>Add charts for monthly and seasonal sales patterns.</li>
+      <li>Integrate with Power BI for advanced interactive dashboards.</li>
+    </ul>
+
+    <h2>📁 Source Code</h2>
+    <a href="https://github.com/gitika-12/Excel-Sales-Dashboard" class="btn" target="_blank">View GitHub Repository</a>
+
+    <h2>📞 Let's Connect</h2>
+    <p>For collaborations, feedback, or internship opportunities — feel free to reach out!</p>
+    <a href="https://www.linkedin.com/in/gitika-bhasin" class="btn" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="height: 18px; vertical-align: middle; margin-right: 8px;">
+      Connect on LinkedIn
+    </a>
+    <a href="https://github.com/gitika-12" class="btn" target="_blank">Visit GitHub Profile</a>
+  </div>
+
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">🔝</button>
+
+  <script>
+    window.onscroll = function() {
+      const btn = document.getElementById("backToTopBtn");
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
