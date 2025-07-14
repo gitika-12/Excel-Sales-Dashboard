@@ -28,7 +28,7 @@ This project showcases an interactive Excel dashboard built using a bike sales d
 
 ## 📁 Files Included
 
-- `BikeSalesDashboard.xlsx` – Main Excel dashboard  
+- `Excel Project 1.xlsx` – Main Excel dashboard  
 - `README.md` – Project overview
 
 ## 👤 Author
